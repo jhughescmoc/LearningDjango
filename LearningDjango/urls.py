@@ -26,5 +26,6 @@ import HelloDjangoApp.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', HelloDjangoApp.views.index, name='index'),
-    url(r'^home$', HelloDjangoApp.views.index, name='home')
+    url(r'^home$', HelloDjangoApp.views.index, name='home'),
+    url(r'^about$', HelloDjangoApp.views.about, name='about'),
 ]
